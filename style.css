@@ -1,0 +1,159 @@
+body {
+  background-color: #c9dad4;
+
+}
+
+h1 {
+  /*color: red;*/
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 50px;
+  color: #434e52;
+
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Roman";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    transition: border-radius ease 1s;
+}
+
+.img-circle:hover {
+   border-radius: 0%;
+}
+
+ @keyframes extend {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0%;
+  }
+}
+
+h2 {
+
+font-family: 'IBM Plex Sans Roman', Times;
+font-size: 18px;
+line-height: 1.8;
+color: #434e52;
+font-variation-settings: 'wght' 100, 'wdth' 85;
+  animation: breathe 8000ms infinite forwards;
+
+}
+
+a {
+  text-decoration: none;
+  color: #4c4c47;
+
+}
+
+p {
+color: #c9dad4;
+
+}
+
+.btn-blue {
+  width: 100%;
+  height: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  animation: pulse 5s infinite;
+  animation-play-state: running;
+  animation-direction: alternate;
+
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: #c9dad4;
+    color: black;
+  }
+  100% {
+    background-color: #434e52;
+    color: white;
+  }
+}
+
+@keyframes breathe {
+    60% {
+        font-variation-settings: 'wght' 700, 'wdth' 100;
+    }
+
+    100% {
+        font-variation-settings: 'wght' 100, 'wdth' 85;
+    }
+}
+
+
+
+
+.card-white {
+background-color: #c9dad4;
+padding: 40px;
+box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+border-radius: 6px;
+margin: 20px 0px;
+text-align: center;
+}
+
+.fab {
+  display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
+}
+
+.list-inline > li {
+  font-size: 50px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+.fa, .fab, .fal, .far, .fas {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;*/
